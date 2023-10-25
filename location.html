@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      nav li {
+        list-style: none;
+      }
+      .university {
+        height: 65px;
+        filter: invert(1);
+        width: 70;
+        height: 70;
+        padding-right: 10px;
+        justify-content: center;
+      }
+      #background {
+        height: 100vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)),
+          url("img1.png");
+        animation: changeImage 15s linear infinite;
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-weight: bold;
+      }
+      @keyframes changeImage {
+        0% {
+          background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)),
+            url("img2.png");
+          background-size: cover;
+          background-repeat: no-repeat;
+          height: 100vh;
+        }
+        25% {
+          background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)),
+            url("img3.png");
+          background-size: cover;
+          background-repeat: no-repeat;
+          height: 100vh;
+        }
+        50% {
+          background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)),
+            url("img4.png");
+          background-size: cover;
+          background-repeat: no-repeat;
+          height: 100vh;
+        }
+        75% {
+          background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)),
+            url("img6.png");
+          background-size: cover;
+          background-repeat: no-repeat;
+          height: 100vh;
+        }
+        100% {
+          background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)),
+            url("img1.png");
+          background-size: cover;
+          background-repeat: no-repeat;
+          height: 100vh;
+        }
+      }
+
+      nav {
+        background-color: #ddd;
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      nav a {
+        color: #333;
+        text-decoration: none;
+        padding: 10px;
+        margin: 5px;
+        border-radius: 5px;
+      }
+
+      nav a:hover {
+        background-color: #333;
+        color: #fff;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+      }
+
+      section {
+        padding: 10px;
+        margin: 10px;
+        background-color: #fff;
+        border-radius: 5px;
+        text-align: justify;
+      }
+
+      p {
+        margin: 0;
+        line-height: 1.5;
+      }
+      #footer {
+        height: 100%;
+        background-color: #ddd;
+        color: #333;
+        justify-content: center;
+        text-align: center;
+        font-size: 20px;
+        font-family: "Rajdhani", sans-serif;
+        padding-top: 1rem;
+      }
+
+      .head {
+        color: #eed3d3;
+        display: flex;
+        flex-direction: column;
+        font-family: "Oswald", sans-serif;
+        padding: 180px;
+        font-size: 50px;
+      }
+      .small {
+        color: #f1e6e6;
+        display: flex;
+        flex-direction: column;
+        font-size: 30px;
+      }
+      #contact {
+        background-color: rgb(234, 246, 246);
+      }
+      .logo {
+        height: 30px;
+        height: 70;
+        width: 70;
+        padding-right: 20px;
+        padding-bottom: 0.4rem;
+      }
+      #contact p {
+        display: flex;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        margin-top: 1.5rem;
+        margin-left: 2rem;
+      }
+      #contact h2 {
+        font-size: 40px;
+        text-align: center;
+        justify-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      b {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        padding-left: 2rem;
+      }
+
+      #icon {
+        display: flex;
+        justify-content: center;
+      }
+      .ic1 {
+        padding: 0 0.7rem;
+      }
+      .twitter {
+        height: 55px;
+        padding: 0;
+        margin: 0;
+      }
+      .facebook {
+        height: 44px;
+        margin: 0;
+        padding-top: 5px;
+      }
+      .instagram {
+        height: 50px;
+        margin: 0;
+      }
+      @media screen and (max-width: 700px) {
+        nav a {
+          font-size: 10px;
+          flex-direction: column;
+          padding: 0.6px;
+          border-radius: 2px;
+        }
+        .university {
+          height: 40px;
+        }
+        .head {
+          font-size: 30px;
+          padding: 95px;
+        }
+        .small {
+          font-size: 20px;
+        }
+
+        .image {
+          margin-left: 10px;
+          height: 80px;
+          width: 90px;
+          border: solid rgb(121, 120, 120) 2px;
+          margin-right: 10px;
+        }
+        .eng {
+          font-size: 1px;
+        }
+
+        #footer {
+          font-size: 15px;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+        }
+        #footer p {
+          font-size: 10px;
+        }
+        .twitter {
+          height: 40px;
+        }
+        .facebook {
+          padding-top: 5px;
+          height: 30px;
+        }
+        .instagram {
+          height: 37px;
+        }
+        .logo {
+          height: 25px;
+        }
+        .con {
+          font-size: 20px;
+        }
+        #placement p {
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: normal;
+          padding-left: 0.4rem;
+          padding-right: 1rem;
+          font-size: 15px;
+          text-align: start;
+        }
+        #research {
+          padding-left: 1rem;
+          padding-right: 1rem;
+        }
+        #placement h2 {
+          font-size: 25px;
+        }
+        #contact h2 {
+          font-size: 25px;
+        }
+        #contact p {
+          font-size: 15px;
+        }
+        #contact b {
+          font-weight: normal;
+          font-size: 15px;
+          padding-left: 0rem;
+        }
+      }
+      .main {
+        overflow: hidden;
+      }
+      body {
+        background-color: rgb(255, 255, 255);
+      }
+      .card {
+        display: flex;
+        height: 250px;
+        width: 90%;
+        border: 1px solid black;
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 30px;
+      }
+      .left {
+        width: 33%;
+        overflow: hidden;
+      }
+      .right {
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid gray; */
+        width: 67%;
+      }
+      .content {
+        margin-top: 10px;
+        margin-left: 10px;
+        /* font-family: 'Bebas Neue', sans-serif; */
+        font-family: "Poppins", sans-serif;
+      }
+
+      .imag {
+        height: 250px;
+        width: 375px;
+      }
+      footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      footer button a {
+        text-decoration: none;
+      }
+      .content h3:hover {
+        text-decoration: underline;
+      }
+      @media (min-width: 300px) and (max-width: 1200px) {
+        .main {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+        .card {
+          display: flex;
+          flex-direction: column;
+          height: 500px;
+          width: 100%;
+          border: 1px solid black;
+          box-shadow: 10px 10px red;
+          /* overflow: auto; */
+        }
+        .imag {
+          width: 100%;
+        }
+        .left {
+          display: flex;
+          width: 100%;
+        }
+        .right {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          overflow: auto;
+          margin-top: 10px;
+        }
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <li><img src="real.png" class="university" /></li>
+      <a href="index.html">Home</a>
+      <a href="views/contact.html">Contact Us</a>
+      <a href="location.html">Location</a>
+      <a href="">Membership</a>
+    </nav>
+    <main class="main">
+      <div class="card" id="firstcard">
+        <div class="left">
+          <img
+            src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+            class="imag"
+          />
+        </div>
+        <div class="right">
+          <h3 class="content">LOREM IPSUM</h3>
+          <p class="content">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique
+            recusandae labore quis error quo ad explicabo ipsa velit a ullam
+            asperiores perspiciatis, enim adipisci atque quaerat vero. Expedita,
+            dolor fuga. Lorem ipsum, dolor sit amet consectetur adipisicing
+            elit. Labore modi nostrum expedita, tempora, porro perspiciatis,
+            officiis sunt cumque voluptas amet consequuntur doloribus qui
+            voluptate dicta voluptatum saepe totam hic possimus vitae similique
+            vel ex. Repellat, hic?
+          </p>
+          <h4 class="content">price: 10000$</h4>
+        </div>
+      </div>
+      <div class="card" id="secondcard">
+        <div class="left">
+          <img
+            src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+            class="imag"
+          />
+        </div>
+        <div class="right">
+          <h3 class="content">LOREM IPSUM</h3>
+          <p class="content">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique
+            recusandae labore quis error quo ad explicabo ipsa velit a ullam
+            asperiores perspiciatis, enim adipisci atque quaerat vero. Expedita,
+            dolor fuga. Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Rem blanditiis dicta corrupti odio. Porro ducimus earum hic
+            distinctio obcaecati? Vel, accusamus iusto. Quaerat possimus
+            veritatis error quasi voluptas odit eius repellendus nobis, pariatur
+            fuga laboriosam explicabo.
+          </p>
+          <h4 class="content">price: 77000$</h4>
+        </div>
+      </div>
+      <div class="card" id="thirdcard">
+        <div class="left">
+          <img
+            src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8OHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+            class="imag"
+          />
+        </div>
+        <div class="right">
+          <h3 class="content">LOREM IPSUM</h3>
+          <p class="content">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique
+            recusandae labore quis error quo ad explicabo ipsa velit a ullam
+            asperiores perspiciatis, enim adipisci atque quaerat vero. Expedita,
+            dolor fuga. Lorem ipsum, dolor sit amet consectetur adipisicing
+            elit. Mollitia voluptatum ab sequi optio voluptates nam atque
+            officiis consectetur, consequuntur, debitis dolorem autem
+            repellendus aperiam ducimus perspiciatis reprehenderit?
+            Necessitatibus minus aperiam suscipit obcaecati dolorum unde?
+            Quibusdam magni
+          </p>
+          <h4 class="content">price: 40000$</h4>
+        </div>
+      </div>
+      <div class="card" id="fourthcard">
+        <div class="left">
+          <img
+            src="https://media.istockphoto.com/id/538082615/photo/new-modern-home-exterior.jpg?s=612x612&w=0&k=20&c=zPjTeShyLqdrNkfxrBGCU5Cta_JYgioZ_l3qNC8LKp0="
+            alt=""
+            class="imag"
+          />
+        </div>
+        <div class="right">
+          <h3 class="content">LOREM IPSUM</h3>
+          <p class="content">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique
+            recusandae labore quis error quo ad explicabo ipsa velit a ullam
+            asperiores perspiciatis, enim adipisci atque quaerat vero. Expedita,
+            dolor fuga. Lorem, ipsum dolor sit amet consectetur adipisicing
+            elit. Quia rem totam maxime tempora animi? Cum, nam fugiat alias
+            totam nemo eveniet mollitia culpa perspiciatis voluptatibus autem
+            quaerat a nobis nostrum dignissimos, harum eaque est itaque, dolorem
+            asperiores! Corporis laboriosam eligendi
+          </p>
+          <h4 class="content">price: 70000$</h4>
+        </div>
+      </div>
+      <div class="card" id="fifthcard">
+        <div class="left">
+          <img
+            src="https://media.istockphoto.com/id/184288036/photo/typical-1990s-home.jpg?s=612x612&w=0&k=20&c=XLyOJEYRYVecTCBUQzB7VjW4ysNMLhSs3gUtEc7JvyI="
+            alt=""
+            class="imag"
+          />
+        </div>
+        <div class="right">
+          <h3 class="content">LOREM IPSUM</h3>
+          <p class="content">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique
+            recusandae labore quis error quo ad explicabo ipsa velit a ullam
+            asperiores perspiciatis, enim adipisci atque quaerat vero. Expedita,
+            dolor fuga. Lorem, ipsum dolor sit amet consectetur adipisicing
+            elit. Qui, consequuntur iste. Velit assumenda dolorum consectetur.
+            Voluptate vero, quasi illo doloremque natus molestias laborum ex est
+            officia obcaecati voluptatibus quidem sequi, nulla ratione quis
+            inventore quos quo
+          </p>
+          <h4 class="content">price: 20000$</h4>
+        </div>
+      </div>
+      <div class="card" id="sixthcard">
+        <div class="left">
+          <img
+            src="https://www.costablancajaveaproperties.com/objetos/temp/source/giulianovillas/301561/G-3400BALCONALMARJAVEA-8Copy.jpeg"
+            alt=""
+            class="imag"
+          />
+        </div>
+        <div class="right">
+          <h3 class="content">LOREM IPSUM</h3>
+          <p class="content">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique
+            recusandae labore quis error quo ad explicabo ipsa velit a ullam
+            asperiores perspiciatis, enim adipisci atque quaerat vero. Expedita,
+            dolor fuga. Lorem, ipsum dolor sit amet consectetur adipisicing
+            elit. Quam, dignissimos autem quibusdam rem sit possimus obcaecati
+            veniam laboriosam. Reiciendis consectetur veniam eum odit. Veniam
+            quam dolorum quod eos eveniet suscipit laborum accusantium officia
+            illo impedit
+          </p>
+          <h4 class="content">price: 50000$</h4>
+        </div>
+      </div>
+    </main>
+    <section id="footer">
+      <footer>
+        <p>Copyright © 2023 Rajeshwari.com All writes reserved</p>
+      </footer>
+    </section>
+  </body>
+</html>
